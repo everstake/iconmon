@@ -33,8 +33,8 @@ ExecStart=/usr/local/bin/node_exporter --collector.textfile.directory /var/lib/n
 [Install]  
 WantedBy=multi-user.target  
 ```  
-### Start script eos_exporter.sh.  
-This script collect metrics to text file. You need to set variables in eos_exporter.sh. For example you can use supervisor to start this script.   
+### Start script icon_exporter.sh.  
+This script collect metrics to text file. You need to set variables in icon_exporter.sh. For example you can use supervisor to start this script.   
 To check Node Exporter use curl http://localhost:9100/metrics.  
 ### Import template to Grafana.  
 You can import template icon_dashboard.json to Grafana using standard import procedure.  
